@@ -1,5 +1,5 @@
 FROM openjdk:7
-COPY . /C:/Users/Carolina/git/es2/27_projeto/src/main/java/Sysout
-WORKDIR /C:/Users/Carolina/git/es2/27_projeto/src/main/java/Sysout
+COPY . C:/Users/Carolina/git/es2/27_projeto/src/main/java/Sysout
+WORKDIR C:/Users/Carolina/git/es2/27_projeto/src/main/java/Sysout
 RUN javac main.java
 CMD ["java", "Main"]
