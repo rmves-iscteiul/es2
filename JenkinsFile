@@ -8,12 +8,12 @@ stage('Git Checkout') {
     }
     
 stage('Build Docker Image'){
-     powershell "docker build -t my-java-app"
+     powershell "docker build -t ${imagename}"
     }
     
     
 stage ('Runing Container to test built Docker Image'){
-    powershell "docker run -it --rm --name my-running-app my-java-app}"
+    powershell "docker run -it --name ${container}  my-java-app}"
     }
     
 }
